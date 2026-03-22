@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
  title: "Kartik Namjoshi | Delivery Principal | Telecom Transformation Leader",
@@ -34,7 +35,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">{children}</body>
+      <body className="bg-black text-white">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
