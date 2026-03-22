@@ -1,9 +1,7 @@
-import { Geist } from "next/font/google";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+import "./globals.css";
 
 export const metadata = {
-  title: "Kartik Namjoshi | Delivery Principal | Telecom Transformation Leader",
+ title: "Kartik Namjoshi | Delivery Principal | Telecom Transformation Leader",
   description:
     "Technical Project Manager with 11+ years experience delivering OSS/BSS transformation programs, leading 100+ teams and driving enterprise delivery.",
   keywords: [
@@ -14,10 +12,10 @@ export const metadata = {
     "Dubai IT Manager"
   ],
   authors: [{ name: "Kartik Namjoshi" }],
-  penGraph: {
+  openGraph: {
     title: "Kartik Namjoshi Portfolio",
     description: "Delivery Leader | Telecom Transformation Expert",
-    url: "https://yourdomain.com",
+    url: "https://kartiknamjoshi.me",
     siteName: "Kartik Namjoshi",
     images: [
       {
@@ -28,3 +26,15 @@ export const metadata = {
     ],
   }
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="bg-black text-white">{children}</body>
+    </html>
+  );
+}
