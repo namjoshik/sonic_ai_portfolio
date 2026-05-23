@@ -2,9 +2,9 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
- title: "Kartik Namjoshi | Delivery Principal | Telecom Transformation Leader",
+  title: "Kartik Namjoshi | Telecom Transformation Leader",
   description:
-    "Technical Project Manager with 11+ years experience delivering OSS/BSS transformation programs, leading 100+ teams and driving enterprise delivery.",
+    "Personal website for Kartik Namjoshi, showcasing delivery leadership, telecom transformation expertise, and OSS/BSS program success.",
   keywords: [
     "Technical Project Manager",
     "Delivery Principal",
@@ -14,8 +14,8 @@ export const metadata = {
   ],
   authors: [{ name: "Kartik Namjoshi" }],
   openGraph: {
-    title: "Kartik Namjoshi Portfolio",
-    description: "Delivery Leader | Telecom Transformation Expert",
+    title: "Kartik Namjoshi | Telecom Transformation Leader",
+    description: "Delivery Principal driving enterprise OSS/BSS and telecom transformation programs.",
     url: "https://kartiknamjoshi.me",
     siteName: "Kartik Namjoshi",
     images: [
@@ -35,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
+      <body className="min-h-screen bg-slate-950 text-white antialiased">
         {children}
         <Analytics />
       </body>
